@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lineBefore {
+  width: 82px;
+  height: 4px;
+  position: absolute;
+  left: -94px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lineAfter {
+  width: 82px;
+  height: 4px;
+  position: absolute;
+  right: -94px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.layerHover {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #1abc9cc9;
+}
+.item:hover .layerHover {
+  opacity: 1;
+}
+
+.active {
+  background-color: #1abc9c;
+}
